@@ -1,0 +1,74 @@
+{% extends 'base.html'%}
+
+{% block title%}
+   <title>刘功勋 | home</title>
+{%endblock%}
+
+{% block pagetemplate %}
+<body class="home page page-id-12 page-template page-template-page-home-php page-home">
+{% endblock %}
+
+
+{% block eachbase%}
+
+	<div id="itsawrap">
+		<section id="hero">
+			<div class="container">
+				<div class="lead-wrap">
+					{% block intro %}
+					
+					{% endblock %}
+				</div>
+			</div>
+			<div class="vidoverlay"></div>
+			<video id="video" autoplay preload="auto" poster="/media/image/Hero.jpg">
+				<source src="/media/video/Hero.webm" type="video/webm" />
+				<source src="/media/video/Hero.mp4" type="video/mp4" />
+				<source src="/media/video/Hero.ogv" type="video/ogg" />	
+			</video>
+		</section>
+
+
+		<section id="home-nav">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-4">
+						<a href="/about/">
+							<h2>About</h2>
+							<p>Designer/Developer with a UX focus.</p>
+						</a>
+					</div>
+					<div class="col-sm-4">
+						<a href="/work/">
+							<h2>Work</h2>
+							<p>A selection of my latest and recent projects.</p>
+						</a>
+					</div>
+					<div class="col-sm-4">
+						<a href="/contact/">
+							<h2>Contact</h2>
+							<p>Let's make something awesome together.</p>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+	<section id="up-next">
+		<div class="container">
+			<div class="row">
+				<div class="next-title">
+					<p class="pretitle">Up Next:</p>
+					
+									</div>
+			</div>
+		</div>
+	</section>
+	
+</div><!-- #itsawrap -->
+
+        
+
+{% endblock %}
+
