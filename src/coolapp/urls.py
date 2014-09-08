@@ -7,11 +7,8 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     # Examples:
-    url(r'^$', 'coolapp.views.home', name='home'),
-    url(r'^about/$', 'coolapp.views.about', name='about'),
-    url(r'^contact/$', 'coolapp.views.contact', name='contact'),
-    url(r'^admin/', include(admin.site.urls)),
-    url(r'^work/', include('coolapp.urls')),
+    url(r'^$', 'coolapp.views.work', name='work'),
+    url(r'^xiaozu/$', 'coolapp.views.xiaozu', name='about'),
     
 )
 
@@ -25,4 +22,3 @@ if settings.DEBUG:
                         document_root=settings.STATIC_ROOT)
     urlpatterns+=static(settings.MEDIA_URL,
                          document_root=settings.MEDIA_ROOT)
-    

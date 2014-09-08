@@ -22,3 +22,8 @@ def contact(request):
     return render_to_response("contact.html",
                               locals(),
                               context_instance=RequestContext(request))
+def xiaozu(request):
+                      
+    return render_to_response("xiaozu.html",
+                              locals(),
+                              context_instance=RequestContext(request))
